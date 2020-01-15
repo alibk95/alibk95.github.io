@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git --help!</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="git---help">Git --help!</h1>
+<p><strong>Hi! I’m gonna share my Git experience at work here</strong><br>
+<em>Target audience: You have a very basic Git experience</em><br>
+<em>Structure: The issues that I had from the very first day at work and the appropriate solutions</em></p>
+<blockquote>
+<p><strong>Note:</strong> The solutions here, might not be the best way of course.</p>
+</blockquote>
+<h2 id="how-do-i-create-a-branch">How do I create a branch:</h2>
+<p>Whenever I want to start working on a new task of course I need to create a new fresh branch from the master usually. The point is, if I’m gonna work on some task on my own then I would create a branch from my personal fork. But if I know that some other colleagues might work on the same issue as well, then it does makes more sense to create a branch from the master Repo.<br>
+Normally I create a branch from the webUI but also the CL commands is possible.<br>
+then after creating the branch I would go as follows in the CL:</p>
+<blockquote>
+<p>git pull<br>
+git checkout ''the name of the branch I created"</p>
+</blockquote>
+<h2 id="what-i-do-after-finishing-specific-task">What I do after finishing specific task:</h2>
+<p>Whenever I finish part of my task I do commit with an appropriate message, short and meaningful.<br>
+and I go:</p>
+<blockquote>
+<p>git commit “appropriate text to this commit”</p>
+</blockquote>
+<p>after finishing all the task and committing all the related commits(<em>funny sentence tho.!</em>) now I have to push them.<br>
+and I go easy:</p>
+<blockquote>
+<p>git push</p>
+</blockquote>
+<p>after pushing all the commits, now from the WebUI (of course could be done from CL) I create a pull request to a person who is in charge of reviewing my code and only after his approval, I can merge it to the master branch.<br>
+The last part which I have to send a pull request is usually happens when you are working in a company and  an important project is ongoing and not everybody are permitted to merge something to the master. And another idea behind it which is also decided in our company is that you are not permitted to approve your own pull request. so the process would be as follows:</p>
+<blockquote>
+<p>I send a pull request ----&gt; my colleague in charge approves —&gt; then I’m allowed to merge</p>
+</blockquote>
+<p><strong>So the concept and main idea is that, it needs to be always at least two people to merge something to the master branch.</strong></p>
+<h2 id="what-if-i-accidentally-worked-on-a-wrong-branch">What if I accidentally worked on a wrong branch:</h2>
+<p>let’s make the scenario this way, assuming that I forgot to change or delete my previous branch and for my new task again I start working on the same one. So in this case in order to save my work, first I need to save them in a stack and it goes:</p>
+<blockquote>
+<p>git stash</p>
+</blockquote>
+<p>then I create a new branch same as I did previously.<br>
+so I go:</p>
+<blockquote>
+<p>git pull<br>
+git checkout “the name of the new branch created”</p>
+</blockquote>
+<p>Now I need to pop everything that I put into the stack.</p>
+<blockquote>
+<p>git stash pop</p>
+</blockquote>
+<p>Finally I can check my changes with:</p>
+<blockquote>
+<p>git diff</p>
+</blockquote>
+<p>so now I have my changes in my new branch without damaging the other branch.<br>
+<strong>Note: The ideal way is that after merging a branch to the master then delete it and start working on a new fresh branch</strong></p>
+<p>.<br>
+.<br>
+.<br>
+<em>updating daily</em></p>
+</div>
+</body>
+
+</html>
