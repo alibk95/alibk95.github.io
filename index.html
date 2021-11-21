@@ -146,7 +146,7 @@ div.desc {
               </a>
             </li>
        </ul>
-      <p><i>© 2020 Alibk95</i></p>
+      <p><i>© 2021 Alibk95</i></p>
     </nav>
 
     <div class="container-fluid p-0">
@@ -156,24 +156,22 @@ div.desc {
           <h1 class="mb-0">ALI
             <span class="mb-0" style="color: #777">B. KARIMI</span>
           </h1>
-          <div class="subheading mb-5">Greschbach Str. 5a, CO. 76229 , Barco Control Rooms, Karlsruhe, Germany
+          <br>
+          <div class="subheading mb-5">Currently Building the Future! <b>&#9935;</b>
             <div>
-            <a style="color:#444" href="">abkarimi1995@gmail.com</a>
+            <a style="color:#444" href="">I learn everyday!</a>
             </div>
-            <h3 class="mb-0" style="padding-top: 50px">
-            <span class="mb-0" style="color: #777">My Live Github Public Contribution Chart</span>
-          	</h3>
-            <div style="padding-top: 10px">
-            	<img src="http://ghchart.rshah.org/alibk95" alt="Github Chart">
-            </div>	
+
+            
+            
           </div>
           <h2 class="mb-5">Bio</h2>
           <p class="mb-6" align="justify">
-          	I'm a Software Engineer based in Germany.<br>
-          	I learn everyday...
-          	I'm a master student at the Karlsruhe University of Applied Science (HSKA) in the Computer Science and Artificial Intelligence. I'm a BiSP fellow where we work on Bio-medical Signals to develop algorithms and diagnostic or prognostic metrics to be employed in medical devices; to cooperate from a computer science or engineering standpoint to the medical and physiological research.
-          <br />Currently I'm a software Engineer at BARCO GmbH in Karlsruhe and I also do my Master's thesis there 
-          working on Failure predictions by means of learning methods. 
+          	Software Engineer based in Germany.<br>
+          	
+            I build smart processes by leveraging connected world.
+          <br />Currently working on multiple software projects, focused in data mining, deep learning, and automation.<br><br>
+          Always happy to connect to people and grow my network! You can often find me through <a style="color:#FD4646" href="">@alibk<a/> or <a style="color:#FD4646" href="">@alibk95</a>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a class="btn" href="https://github.com/alibk95" target="_blank">
@@ -266,7 +264,7 @@ div.desc {
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Synthesising Human Iris by Means of Generative Models (GAN)</h3>
-              <div class="subheading mb-3">under Progression(My Master's Thesis)</div>
+              <div class="subheading mb-3"></div>
               <p align="justify">Research and implementation of generating human iris by Generative Adversarial Networks in an unsuprevised way. The list of papers I gathered which are helping me the way are listed on my github. <br/> Also I summerized each of the papers in one or two pages so might be easier to go through. You can find it also along with other papers, called: summary</p>
 
               <div class="responsive">
@@ -337,6 +335,40 @@ div.desc {
       </section>
 
     </div>
+
+<h3 class="mb-0" style="padding-top: 10px; text-align: center">
+            <span class="mb-0" style="color: #777">My Live Github Public Contribution Chart</span>
+            </h3>
+      <!-- Include the library. -->
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<!-- Prepare a container for your calendar. -->
+<div class="calendar">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+</div>
+
+<script>
+    GitHubCalendar(".calendar", "LeCoupa");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "LeCoupa", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "LeCoupa", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${username}`)
+       }
+    }).then(r => r.text())
+</script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
